@@ -1,0 +1,9 @@
+name: Grapple
+version: 1.1.0
+author: Joansiitoh
+main: me.dragonsteam.grapple.Grapple
+api-version: 1.13
+
+commands:
+  grapple:
+    description: Default plugin command.

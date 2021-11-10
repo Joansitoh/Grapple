@@ -1,0 +1,58 @@
+################################################
+#
+# SIMPLEGRAPPLE - v1.1.0
+# https://discord.gg/78T3sETduX
+#
+################################################
+
+# Available methods: PLAYERS, HOOK, BOTH
+# PLAYERS --> Catch the players and draw them towards you.
+# HOOK --> Get hooked anywhere and fly over the world.
+METHOD: HOOK
+
+CHECK-UPDATES: true
+
+GRAPPLE:
+  ITEM-NAME: "&6Grapple" # Grapple name
+  FORMAT: # Grapple lore
+    - '&eUse this grapple to hook all.'
+
+  JOIN-GRAPPLE: true
+  HOOKED: true # Block grapple in inventory.
+  UNDROP: true # Enable or disable item drop.
+  SLOT: 4 # Delete this option if you want it to be added in a free slot.
+
+HOOKS:
+  PLAYERS:
+    # Grapple launch power multiplier #
+    X-MULTIPLIER: 0.07
+    Y-MULTIPLIER: 0.10
+    Z-MULTIPLIER: 0.07
+
+    # List of all sounds in 1.8: http://docs.codelanx.com/Bukkit/1.8/org/bukkit/Sound.html #
+    SOUND: 'BAT_TAKEOFF'
+    EFFECT: 'CLOUD'
+
+  DEFAULT:
+    # Grapple launch power multiplier #
+    X-MULTIPLIER: 0.07
+    Y-MULTIPLIER: 0.10
+    Z-MULTIPLIER: 0.07
+
+    # List of all sounds in 1.8: http://docs.codelanx.com/Bukkit/1.8/org/bukkit/Sound.html #
+    SOUND: 'BAT_TAKEOFF'
+    EFFECT: 'CLOUD'
+
+PERMISSIONS:
+  RELOAD-PLUGIN: "grapple.reload"
+  PLUGIN-HELP: "grapple.help"
+  GIVE-GRAPPLE: "grapple.use"
+  USE-GRAPPLE: "grapple.get"
+
+MESSAGES:
+  RELOADING: "&aPlugin config reloaded correctly."
+  NO-PLAYER: "&cPlayer <grapple_player> isn't connected or not exist."
+  NO-PERMISSION: "&cYou don't have permissions to execute this command."
+
+  GRAPPLE-GIVEN: "&aGiving grapple..."
+  GRAPPLE-FORCE-GIVEN: "&aGrapple given to <grapple_player>"
